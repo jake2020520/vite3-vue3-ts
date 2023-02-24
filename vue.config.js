@@ -62,13 +62,13 @@ module.exports = defineConfig({
 
   devServer: {
     // 设置主机地址
-    host: "dev.haier.net",
+    host: "dev.hai.net",
     // 设置默认端口
     port: 8080,
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
-    allowedHosts: "h.haier.net", //  新增该配置项
+    allowedHosts: "h.hai.net", //  新增该配置项
     // 设置代理 用nginx 配置了，这里就不用配置了
     proxy: {
       // "/org-center/api": {

@@ -2,7 +2,7 @@
  * @Author: 徐德松 lingxuesonga@163.com
  * @Date: 2023-02-24 09:33:15
  * @LastEditors: 徐德松 lingxuesonga@163.com
- * @LastEditTime: 2023-02-24 16:56:15
+ * @LastEditTime: 2023-02-24 17:04:21
  * @FilePath: \vite3-vue3-ts\vite.config.ts
  * @Description:
  */
@@ -43,13 +43,13 @@ export default defineConfig(({ command, mode }) => {
       proxy: {
         "/org-center/api": {
           // 目标 API 地址
-          target: "http://org-center.qd-aliyun-test-internal.haier.net",
+          target: "",
           // 将主机标头的原点更改为目标URL
           changeOrigin: true,
         },
         "/v1/cph4": {
           // 目标 API 地址
-          target: "http://n-dev.haier.net",
+          target: "",
           // 将主机标头的原点更改为目标URL
           changeOrigin: true,
         },
