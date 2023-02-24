@@ -1,0 +1,24 @@
+// html {
+//   background: salmon !important;
+// }
+
+@foot-height: 102px;
+
+.scrollbar-style {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    z-index: 1000;
+  }
+  &::-webkit-scrollbar-thumb {
+    // box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+    background: #c1c1c1;
+    border-radius: 3px;
+    &:vertical {
+      // 横向颜色
+      background-color: #c1c1c1;
+    }
+  }
+}
+
