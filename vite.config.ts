@@ -2,8 +2,8 @@
  * @Author: 徐德松 lingxuesonga@163.com
  * @Date: 2023-02-24 09:33:15
  * @LastEditors: 徐德松 lingxuesonga@163.com
- * @LastEditTime: 2023-02-24 09:46:36
- * @FilePath: \data-authority-1\vite.config.ts
+ * @LastEditTime: 2023-02-24 16:56:15
+ * @FilePath: \vite3-vue3-ts\vite.config.ts
  * @Description:
  */
 import { defineConfig, loadEnv } from "vite";
@@ -23,7 +23,7 @@ export default defineConfig(({ command, mode }) => {
       },
     },
     define: {
-        // 两种全局变量注入的方式 2
+      // 两种全局变量注入的方式 2
       GLOBAL_CONFIG: vueConfigDefine[mode],
     },
     css: {
@@ -38,7 +38,7 @@ export default defineConfig(({ command, mode }) => {
     },
     server: {
       // 设置主机地址
-      host: "dev.haier.net",
+      host: "0.0.0.0",
       port: 8080,
       proxy: {
         "/org-center/api": {
